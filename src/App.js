@@ -1,8 +1,23 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import  http from './server'
 
 class App extends Component {
+
+  componentWillMount() {
+      this.handleQequest()
+  }
+
+
+  async handleQequest(){
+    const res = await http.post('/api/hello')
+    console.log(res)
+  }
+
+
+
+
   render() {
     return (
       <div className="App">
