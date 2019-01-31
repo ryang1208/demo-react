@@ -44,6 +44,7 @@
     "react-app-polyfill": "^0.2.0",
     "react-dev-utils": "^7.0.1",
     "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
     "resolve": "1.8.1",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
@@ -54,7 +55,7 @@
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3"
   },
-  "proxy":"http://47.96.88.144:8080",
+  "proxy": "http://47.96.88.144:8080",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
