@@ -15,4 +15,13 @@ http.post = function (api,data) {
     })
 }
 
+http.get = function (api,data) {
+    let params = qs.stringify(data)
+    return new Promise((resolve,reject)=>{
+        axios.get(api,params).then((res)=>{
+            resolve(res)
+        })
+    })
+}
+
 export default  http

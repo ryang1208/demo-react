@@ -9,13 +9,10 @@ class App extends Component {
       this.handleQequest()
   }
 
-
   async handleQequest(){
-    const res = await http.post('/api/hello')
+    const res = await http.get('/api/hello')
     console.log(res)
   }
-
-
 
 
   render() {
